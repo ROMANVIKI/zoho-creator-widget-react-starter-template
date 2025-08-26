@@ -1,4 +1,3 @@
-```md
 # 🔧 Zoho Creator Widget React + Tailwind Starter Template
 
 This is a starter template for building **Zoho Creator Widgets** using **React + Tailwind CSS + Vite**, with support for **ZET CLI** for validation and packaging.
@@ -10,7 +9,6 @@ This is a starter template for building **Zoho Creator Widgets** using **React +
 ## 📁 Folder Structure
 
 ```
-
 .
 ├── public/                     # Vite public assets
 ├── src/                       # React source files
@@ -30,8 +28,7 @@ This is a starter template for building **Zoho Creator Widgets** using **React +
 ├── vite.config.js             # Vite + Tailwind config
 ├── package.json
 └── README.md                  # You're here!
-
-````
+```
 
 ---
 
@@ -47,7 +44,6 @@ This is a starter template for building **Zoho Creator Widgets** using **React +
 ## ✅ Prerequisites
 
 Make sure you have:
-
 - Node.js (v16+ recommended)
 - `zet` CLI installed globally
 
@@ -55,7 +51,7 @@ Install `zet`:
 
 ```bash
 npm install -g @zoho/zet
-````
+```
 
 ---
 
@@ -69,8 +65,6 @@ cd your-repo-name
 npm install
 ```
 
----
-
 ### 2. Add Zoho Widget SDK
 
 Add this **script tag** to the `<head>` of `public/index.html`:
@@ -80,8 +74,6 @@ Add this **script tag** to the `<head>` of `public/index.html`:
 ```
 
 > ⚠️ Don't use the older V1 SDK (`creator-sdk.min.js`) — it's incompatible with JS API v2.
-
----
 
 ### 3. Tailwind + Vite Configuration
 
@@ -97,8 +89,6 @@ export default defineConfig({
 });
 ```
 
----
-
 ### 4. Build the React App
 
 ```bash
@@ -106,8 +96,6 @@ npm run build
 ```
 
 This will generate the production files inside the `widget/` folder.
-
----
 
 ### 5. Create a ZET Widget Project
 
@@ -119,15 +107,11 @@ zet init vchat
 
 This creates the `vchat/` folder with a valid widget project structure.
 
----
-
 ### 6. Copy Build Files to ZET App Directory
 
 ```bash
 cp -r widget/* vchat/app/
 ```
-
----
 
 ### 7. Validate the Widget
 
@@ -137,8 +121,6 @@ zet validate
 ```
 
 If there are no errors, your widget is valid and ready to pack.
-
----
 
 ### 8. Package the Widget
 
@@ -152,31 +134,33 @@ This will create a `dist/` folder inside `vchat/`, containing a `.zip` file you 
 
 ## 📄 Notes
 
-* Always test your widget inside **Zoho Creator** — the Widget SDK does not run properly outside the Creator environment (like localhost).
-* The correct API usage for V2 looks like this:
+- Always test your widget inside **Zoho Creator** — the Widget SDK does not run properly outside the Creator environment (like localhost).
+- The correct API usage for V2 looks like this:
 
 ```js
 var config = {
   app_name: "zylker",
   report_name: "All-Timesheet"
 };
+
 ZOHO.CREATOR.DATA.getRecords(config).then(function (response) {
   console.log(response);
-});```
+});
+```
 
-* No need to use `ZOHO.CREATOR.init()` in JS API v2.
+- No need to use `ZOHO.CREATOR.init()` in JS API v2.
 
+---
 
 ## 🧪 Future Enhancements
 
-* Add reusable API hooks
-* Add state management (e.g., Zustand or Context)
-* Create CLI to auto-copy and validate widget
+- Add reusable API hooks
+- Add state management (e.g., Zustand or Context)
+- Create CLI to auto-copy and validate widget
 
 ---
 
 ## 🧑‍💻 Author
 
-* 🧠 Created by \ romanviki
-* 🐙 GitHub: [@ROMANVIKI
-](https://github.com/ROMANVIKI)
+- 🧠 Created by **romanviki**
+- 🐙 GitHub: [@ROMANVIKI](https://github.com/ROMANVIKI)
