@@ -1,0 +1,10 @@
+{
+  "name": "vchat-react",
+  "label": "My React Widget",
+  "description": "A sample React + Tailwind widget",
+  "platform": "creator",
+  "version": "1.0",
+  "ui": {
+    "main": "index.html"
+  }
+}

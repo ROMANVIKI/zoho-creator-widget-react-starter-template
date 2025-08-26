@@ -1,0 +1,15 @@
+{
+  "service": "CREATOR",
+  "cspDomains": {
+    "connect-src": []
+  },
+  "config": [],
+  "name": "vchat",
+  "label": "VChat Widget",
+  "platform": "creator",
+  "type": "widget",
+  "version": "2.0",
+  "ui": {
+    "main": "index.html"
+  }
+}
